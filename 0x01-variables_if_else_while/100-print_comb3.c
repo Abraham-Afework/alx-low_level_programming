@@ -6,16 +6,18 @@
 int main(void)
 {
 
-	int numCount, alphaCount;
+	int count,numCount, alphaCount;
 
-
-	numCount = 48;
-	alphaCount = 97;
-	while (alphaCount < 103)
+	count = 1;
+	numCount = 57;
+	alphaCount = 48;
+	while (alphaCount <=numCount)
 	{
-		while (numCount < 58)
+		while (count<10))
 		{
+		putchar(alphaCount);
 		putchar(numCount);
+		count++
 		numCount++;
 		}
 	putchar(alphaCount);
