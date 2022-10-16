@@ -10,15 +10,16 @@ int main(void)
 
 
 	count = 0;
-	while (count < 10)
+	while (count <= 9)
 	{
 		putchar(48 + count);
 		if (count != 9)
 		{
 			putchar(44);
+			putchar(32);
 		}
-		putchar(32);
 		count++;
 	}
+	putchar(10);
 	return (0);
 }
