@@ -5,6 +5,7 @@
  */
 int main(void)
 {
+
 	/* variable declaration for the operation */
 	int firstNumber, secondNumber, lastNumber, counter, tenTimes;
 
@@ -25,6 +26,7 @@ int main(void)
 				/*if sastisfied print comma */
 			{
 				putchar(44);
+				putchar(32);
 			}
 			counter++;
 			secondNumber++;
@@ -32,5 +34,6 @@ int main(void)
 		firstNumber++;
 		tenTimes--;
 	}
+	putchar(10);
 	return (0);
 }
