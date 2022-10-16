@@ -5,24 +5,32 @@
  */
 int main(void)
 {
+	/* variable declaration for the operation */
+	int firstNumber, secondNumber, lastNumber, counter, tenTimes;
 
-	int count,numCount, alphaCount;
-
-	count = 1;
-	numCount = 57;
-	alphaCount = 48;
-	while (alphaCount <=numCount)
+	firstNumber = 48;   /* ASCII code which  which represent the number 0 */
+	secondNumber = 48;  /* ASCII code which which represent the number 0 */
+	lastNumber = 57;      /* ASCII code which which represent the number 9 */
+	tenTimes = 10;       /* variable decleared for iteration to print */
+	while (firstNumber < lastNumber)
 	{
-		while (count<10))
+		counter = 1;
+		secondNumber = firstNumber + 1;
+
+		while (counter < tenTimes)
 		{
-		putchar(alphaCount);
-		putchar(numCount);
-		count++
-		numCount++;
+			putchar(firstNumber);
+			putchar(secondNumber);
+			if (!(firstNumber == 56 && secondNumber == 57))
+				/*if sastisfied print comma */
+			{
+				putchar(44);
+			}
+			counter++;
+			secondNumber++;
 		}
-	putchar(alphaCount);
-	alphaCount++;
+		firstNumber++;
+		tenTimes--;
 	}
-	putchar(10);
 	return (0);
 }
