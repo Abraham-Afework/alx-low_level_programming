@@ -1,21 +1,30 @@
-#include<stdio.h>
+#include"main.h"
+
 /**
-  * main - all things are excuited here
-  * Return: returns the value 0.
+ * main - entry point
+ *
+ * Discripiton: Prints out _putchar using while loop
+ *
+ * Return: always 0
  */
 
 int main(void)
 {
+/* i is decleared for iteration*/
+
 	int i;
+
+/* char alphabet[] will contain the charachter "_putchar" */
+
 	char alphabet[] = "_putchar";
 
-	i=0;
+	i = 0;
 
 	while (alphabet[i] != '\0')
 	{
-	putchar(alphabet[i]);
+	_putchar(alphabet[i]);
 	i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
