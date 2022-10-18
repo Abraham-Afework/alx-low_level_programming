@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	int timesTen;
 
 
-	timesTen = 0;
+	timesTen = 1;
 
 	while (timesTen <= 10)
 	{
