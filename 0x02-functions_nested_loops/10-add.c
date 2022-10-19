@@ -4,9 +4,9 @@
  *
  * @a: int value the first number to be added
  *
- * @b int value and second number to be added
+ * @b: int value and second number to be added
  *
- * Return: sum of a and b 
+ * Return: sum of a and b
  *
  */
 int add(int a, int b)
@@ -14,7 +14,7 @@ int add(int a, int b)
 	int sum;
 
 
-	sum=a+b;
+	sum = a + b;
 
 
 	return (sum);
