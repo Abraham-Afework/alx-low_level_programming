@@ -1,4 +1,3 @@
-#include <unistd.h>
 /**
  * _isupper - checks if the character is upper case
  *
