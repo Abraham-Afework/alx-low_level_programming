@@ -1,21 +1,14 @@
 #include<stdio.h>
 /**
- * fizz_buzz - displays number from 1 to 100
+ * main - entry point
  *
- * Description:  for multiples of 3 prints Fizz multiples of five print Buzz.
+ * Description:  for multiples of 3 prints Fizz multiples of 5 print Buzz
+ *
+ * Return: zero always
  *
  */
-void fizz_buzz(void);
 
 int main(void)
-
-{
-
-	fizz_buzz();
-	return (0);
-}
-
-void fizz_buzz(void)
 {
 	int i;
 
@@ -23,10 +16,10 @@ void fizz_buzz(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("fizzBuzz");
+			printf("FizzBuzz");
 			putchar(' ');
 		}
-		else if (i % 5 == 0)  
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 			putchar(' ');
@@ -43,4 +36,6 @@ void fizz_buzz(void)
 			putchar(' ');
 		}
 	}
+	putchar(10);
+	return (0);
 }
