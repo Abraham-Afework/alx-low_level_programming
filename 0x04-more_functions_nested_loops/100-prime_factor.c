@@ -3,7 +3,7 @@
  * main - print out largest prime factorial
  *
  * Description: it will print the largest prime factor of '612852475143
- *
+ *612852475143
  *Return: 0 always
  *
  */
