@@ -1,1 +1,6 @@
-0-void positive_or_negative(int);
+.gitigore
+main
+*.sw*
+a.out
+positive_or_negative.c
+0-main
