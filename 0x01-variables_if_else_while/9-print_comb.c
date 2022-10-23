@@ -20,10 +20,6 @@ int main(void)
 		}
 		count++;
 	}
-<<<<<<< HEAD
-	putchar(32);
-=======
 	putchar(10);
->>>>>>> 8cc521a5d32ba5a808c9dc34ca913f4cafe6f94a
 	return (0);
 }
