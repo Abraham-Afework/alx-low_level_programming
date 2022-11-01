@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 /**
  * _strspn - gets the length of a prefix substring
  *
@@ -27,4 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 		else
 			return (c);
 	}
+	return (c);
 }
