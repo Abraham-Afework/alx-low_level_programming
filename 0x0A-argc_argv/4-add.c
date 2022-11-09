@@ -13,13 +13,16 @@ int main(int argc, char *argv[])
 {
 	/* i created for iteration */
 	int i, sum;
+	char *end;
 
 	i = 1;
 	sum = 0;
 
 	while (i < argc)
 	{
-		if (!atoi(argv[i]))
+		strtol((argv[i]), &end, 10);
+
+		if (*end != '\0')
 		{
 			printf("Error\n");
 			return (1);
