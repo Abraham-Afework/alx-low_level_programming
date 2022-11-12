@@ -14,3 +14,6 @@ void print_to(int num);
 void print_to_98(int n);
 void lessthan98(int num);
 void greaterthan98(int num);
+void printcomma(int b, int n);
+void checker(int mul, int b, int n);
+
