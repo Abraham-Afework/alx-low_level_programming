@@ -1,4 +1,4 @@
 #ifndef __SUM_H__
 #define __SUM_H__
 #define SUM(a, b)  ((a) + (b))
-#endif /* _SUM_H_*/
+#endif /* __SUM_H__*/
