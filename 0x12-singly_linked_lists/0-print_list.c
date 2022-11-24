@@ -11,7 +11,6 @@ size_t print_list(const list_t *h)
 	unsigned int count, length;
 	char *s;
 
-	
 	count = 0;
 	while (h != NULL)
 	{
@@ -22,10 +21,10 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			s ="(nil)";
+			s = "(nil)";
 			length =  0;
 		}
-	
+
 		printf("[%d] %s\n", length, s);
 		h = h->next;
 		count++;
