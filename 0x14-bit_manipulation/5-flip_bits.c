@@ -1,30 +1,29 @@
-#include"main.h"
-#include<stdio.h>
-#include<stddef.h>
+#include "main.h"
+
 /**
- * flip_bit - function that sets the value of a bit to 0 at a given index.
+ * flip_bits - returns number of bits you would need to flip to get from one
+ * number to another
+ * @n: value 1
+ * @m: value 2
  *
- * @n: the number to be changed
- * @m: a bit index
- *
- * Return: 1 if error occurred -1
- *
+ * Return: number of bits to flip to get from one number to another
  */
 
- unsigned int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int binary, i;
+	unsigned long int x, flip;
 
-	i = index;
+	x = n ^ m;
 
-	if (n == NULL && index > 64)
+	flip = 0;
+
+	while (x != 0)
 	{
-		return (-1);
+		if ((x & 1) == 1)
+		{
+			flip++;
+		}
+		x = x >> 1;
 	}
-	else
-	{
-		binary = 1 << i;
-		*n = *n | binary;
-		return (1);
-	}
+	return (flip);
 }
