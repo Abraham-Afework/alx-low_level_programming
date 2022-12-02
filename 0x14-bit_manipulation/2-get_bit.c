@@ -21,7 +21,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		num = num >> 1;
 		max++;
 	}
-	if (index <= max)
+	if (index <= 64)
 	{
 		while (n > 0)
 		{
