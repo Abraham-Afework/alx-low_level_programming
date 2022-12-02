@@ -11,31 +11,24 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int count, max, num;
+	unsigned int count, num;
 
-	max = count = 0;
+	count = 0;
 	num = n;
-
+	if (index > 64)
+		return (-1);
 	while (num > 0)
 	{
-		num = num >> 1;
-		max++;
-	}
-	if (index <= 64)
-	{
-		while (n > 0)
+		if ((n & 1) && index == count)
 		{
-			if ((n & 1) && index == count)
-			{
-				return (1);
-			}
-			else if (!(n & 1) && index == count)
-			{
-				return (0);
-			}
-			n = n >> 1;
-			count++;
+			return (1);
 		}
+		else if (!(n & 1) && index == count)
+		{
+			return (0);
+		}
+		n = n >> 1;
+		count++;
 	}
 	return (-1);
 }
